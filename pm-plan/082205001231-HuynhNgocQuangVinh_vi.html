@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8" />
+<title>PROJECT MANAGEMENT PLAN - 082205001231-HuynhNgocQuangVinh (VI)</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+  @page { size: A4; margin: 2.5cm 2cm; }
+  body { font-family: Calibri, Arial, sans-serif; color: #000; font-size: 11pt; }
+  .header-banner { background:#1F4E79; color:#fff; text-transform: uppercase; text-align:center; padding:6px 10px; font-weight:bold; letter-spacing:.5px; }
+  .section-title { background:#1F4E79; color:#fff; text-transform: uppercase; padding:6px 10px; font-weight:bold; margin:18px 0 8px; }
+  .hint { font-style: italic; color:#000; }
+  table { width:100%; border-collapse: collapse; margin:6px 0 14px; }
+  th, td { border:1px solid #666; padding:6px 8px; vertical-align: top; }
+  th { background:#eeeeee; font-weight:bold; }
+  .two-col { display:grid; grid-template-columns: 1fr 1fr; gap:12px; }
+  .grid-box { border:1px solid #666; padding:8px; }
+  .grid-box h4 { margin:0 0 6px; font-size: 11pt; }
+  .footer { display:flex; justify-content:space-between; align-items:center; font-size:10pt; color:#2E74B5; margin-top:8px; }
+  .page-break { page-break-before: always; }
+  ul { margin:6px 0 6px 20px; }
+  .meta p { margin:2px 0; }
+</style>
+</head>
+<body>
+  <div class="header-banner">PROJECT MANAGEMENT PLAN</div>
+
+  <div class="meta">
+    <p><strong>Dự án:</strong> Ứng dụng Quản lý Chi tiêu Cá nhân (Android)</p>
+    <p><strong>Tác giả:</strong> 082205001231 - Huỳnh Ngọc Quang Vinh</p>
+    <p><strong>Thời gian:</strong> 8 tuần (W1–W8)</p>
+    <p><strong>Phạm vi (MVP):</strong> Theo dõi chi tiêu/thu nhập, lập ngân sách tuần/tháng kèm cảnh báo, nhắc hóa đơn, báo cáo/biểu đồ.</p>
+  </div>
+
+  <div class="section-title">TEMPLATE GUIDE</div>
+  <p class="hint">Đây là hướng dẫn các mục thường có trong Project Management Plan. Có thể thêm/bớt/chỉnh để phù hợp dự án. Các bảng là gợi ý định dạng; xóa phần chữ nghiêng này trước khi chia sẻ bản cuối.</p>
+
+  <div class="page-break"></div>
+
+  <div class="header-banner">PROJECT MANAGEMENT PLAN</div>
+  <div class="section-title">PROJECT LIFE CYCLE</div>
+  <p class="hint">Mô tả vòng đời dự án, gồm khởi động có kiểm soát, thực thi, đảm bảo chất lượng và đóng dự án.</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Phase</th>
+        <th>Key Activities</th>
+        <th>Key Deliverables</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Initiation (W1)</td>
+        <td>Xác định mục tiêu và phạm vi MVP; nhận diện stakeholder và rủi ro ban đầu; khởi tạo repo Git và quy ước nhánh.</td>
+        <td>Project Charter rút gọn; danh sách yêu cầu cấp cao; repo đã khởi tạo.</td>
+      </tr>
+      <tr>
+        <td>Planning (W1–W2)</td>
+        <td>Phân tích yêu cầu chi tiết; WBS; lịch Gantt; ước lượng; lập kế hoạch chất lượng, truyền thông, rủi ro; mockup UX; kiến trúc & lược đồ DB.</td>
+        <td>Scope, Schedule, Cost baselines; mockup; kiến trúc & DB schema.</td>
+      </tr>
+      <tr>
+        <td>Design &amp; Build (W3–W6, iterative)</td>
+        <td>Room/Repository; Giao dịch/Danh mục; Ngân sách &amp; cảnh báo; Báo cáo &amp; xuất CSV.</td>
+        <td>Tính năng FR1–FR9 hoạt động; tài liệu kiến trúc cập nhật; POC Notification.</td>
+      </tr>
+      <tr>
+        <td>QA &amp; UAT (W7)</td>
+        <td>Unit/UI test; kịch bản chấp nhận; sửa lỗi; hướng dẫn sử dụng.</td>
+        <td>Báo cáo test; checklist chấp nhận; HDSD.</td>
+      </tr>
+      <tr>
+        <td>Deploy &amp; Close (W8)</td>
+        <td>Build phát hành & ký; demo; tổng kết bài học; lưu trữ artefacts.</td>
+        <td>APK 1.0; báo cáo tổng kết; gói bàn giao.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Phase</th>
+        <th>Reviews</th>
+        <th>Entry Criteria</th>
+        <th>Exit Criteria</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Initiation</td>
+        <td>Kickoff Review</td>
+        <td>Được giao đề tài; hiểu rõ yêu cầu môn học</td>
+        <td>Charter phê duyệt; phạm vi MVP sơ bộ</td>
+      </tr>
+      <tr>
+        <td>Planning</td>
+        <td>Plan Review</td>
+        <td>Charter phê duyệt; danh sách yêu cầu ban đầu</td>
+        <td>Baselines (Scope/Schedule/Cost) chốt; WBS + Gantt</td>
+      </tr>
+      <tr>
+        <td>Design &amp; Build</td>
+        <td>Sprint Reviews (cuối W4, W6)</td>
+        <td>Kế hoạch đã baseline; môi trường dev sẵn sàng</td>
+        <td>Hoàn tất tính năng MVP; qua QA sơ bộ</td>
+      </tr>
+      <tr>
+        <td>QA &amp; UAT</td>
+        <td>Test Readiness; UAT Sign-off</td>
+        <td>Đóng băng tính năng; có dữ liệu test</td>
+        <td>Đạt tiêu chí chấp nhận; UAT phê duyệt</td>
+      </tr>
+      <tr>
+        <td>Deploy &amp; Close</td>
+        <td>Release/Closeout Review</td>
+        <td>APK qua UAT; tài liệu sẵn sàng</td>
+        <td>Bàn giao xong; đóng dự án</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="section-title">DEVELOPMENT APPROACHES</div>
+  <p class="hint">Mô tả phương pháp phát triển cho từng deliverable.</p>
+  <table>
+    <thead>
+      <tr>
+        <th>Deliverable</th>
+        <th>Development Approach</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Ứng dụng Android (MVP)</td>
+        <td>Agile lặp (2 sprint × 2 tuần + 1 tuần hardening); MVVM + Jetpack; PR nhỏ có code review.</td>
+      </tr>
+      <tr>
+        <td>Tầng dữ liệu (Room/SQLite)</td>
+        <td>Thiết kế lược đồ → DAO/Repository → Migration; unit test (in-memory).</td>
+      </tr>
+      <tr>
+        <td>Giao dịch &amp; Danh mục</td>
+        <td>Phát triển theo use case; TDD mức domain khi khả thi.</td>
+      </tr>
+      <tr>
+        <td>Ngân sách &amp; Cảnh báo</td>
+        <td>Logic theo tuần/tháng + Notification/AlarmManager; kiểm thử dự báo.</td>
+      </tr>
+      <tr>
+        <td>Báo cáo &amp; Biểu đồ</td>
+        <td>Query tổng hợp + MPAndroidChart/Compose Charts; tối ưu hiệu năng.</td>
+      </tr>
+      <tr>
+        <td>Xuất/nhập CSV</td>
+        <td>Module tiện ích; kiểm thử file I/O; đảm bảo tính toàn vẹn dữ liệu.</td>
+      </tr>
+      <tr>
+        <td>Kiểm thử (Unit/UI)</td>
+        <td>JUnit/Mockito/Espresso; tiêu chí pass theo NFR.</td>
+      </tr>
+      <tr>
+        <td>Tài liệu &amp; HDSD</td>
+        <td>Soạn Markdown → xuất PDF; chụp màn hình minh họa luồng chính.</td>
+      </tr>
+      <tr>
+        <td>Phát hành APK</td>
+        <td>Build release, ký app (keystore local), checklist phát hành.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="section-title">SUBSIDIARY MANAGEMENT PLANS</div>
+  <p class="hint">Liệt kê các kế hoạch quản lý bổ trợ cho dự án.</p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Comment</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Scope</td><td>Scope Management Plan – kiểm soát phạm vi/MVP và quy trình thay đổi</td></tr>
+      <tr><td>Time</td><td>Schedule Management Plan – Gantt W1–W8 và quy tắc cập nhật tiến độ</td></tr>
+      <tr><td>Cost</td><td>Cost/Effort Plan – ước lượng giờ và phân bổ theo WBS</td></tr>
+      <tr><td>Quality</td><td>Quality Plan – tiêu chí chấp nhận, chuẩn code, code review</td></tr>
+      <tr><td>Resources</td><td>Resource Plan – thiết bị, môi trường, vai trò</td></tr>
+      <tr><td>Communications</td><td>Communications Plan – kênh và nhịp báo cáo hằng tuần</td></tr>
+      <tr><td>Risk</td><td>Risk Register – nhận diện, đánh giá, ứng phó</td></tr>
+      <tr><td>Procurement</td><td>Procurement Plan – thư viện OSS, giấy phép, keystore</td></tr>
+      <tr><td>Stakeholder</td><td>Stakeholder Plan – bản đồ và chiến lược tương tác</td></tr>
+      <tr><td>Other Plans</td><td>Configuration & Change Control; Security & Privacy; Data & Backup</td></tr>
+    </tbody>
+  </table>
+
+  <div class="page-break"></div>
+
+  <div class="header-banner">PROJECT MANAGEMENT PLAN</div>
+  <div class="section-title">VARIANCE THRESHOLDS</div>
+  <p class="hint">Ghi rõ ngưỡng sai lệch cho phạm vi, lịch, chi phí và cách quản lý baseline.</p>
+
+  <div class="two-col">
+    <div class="grid-box">
+      <h4>Scope Variance Threshold</h4>
+      <ul>
+        <li>Điều chỉnh UI nhỏ, tiểu tính năng không đổi luồng chính.</li>
+        <li>Hiệu năng: thêm giao dịch &lt; 100 ms trên máy tầm trung.</li>
+        <li>Mượt mà hiển thị: mục tiêu ≥ 60 FPS cho màn hình chính.</li>
+      </ul>
+    </div>
+    <div class="grid-box">
+      <h4>Scope Baseline Management</h4>
+      <p>Quản lý qua Scope Baseline (yêu cầu đã duyệt, WBS). Thay đổi nhỏ ghi nhận vào backlog, không cần CR. Thay đổi trung/b lớn cần Change Request kèm phân tích tác động (Schedule/Cost/Quality) và phê duyệt trước khi thực hiện. Cập nhật ma trận truy vết sau khi duyệt.</p>
+    </div>
+    <div class="grid-box">
+      <h4>Schedule Variance Threshold</h4>
+      <ul>
+        <li>Chấp nhận: trễ ≤ 10% mục, không ảnh hưởng đường găng; dùng ≤ 50% float.</li>
+        <li>Cảnh báo: 10–20% hoặc dùng &gt; 50% float.</li>
+        <li>Không chấp nhận: &gt; 20% hoặc trễ đường găng &gt; 3 ngày/1 tuần.</li>
+      </ul>
+    </div>
+    <div class="grid-box">
+      <h4>Schedule Baseline Management</h4>
+      <p>Theo dõi hàng tuần (burndown, % hoàn thành). Khi cảnh báo: đổi ưu tiên, cắt nợ kỹ thuật nhỏ. Nếu không chấp nhận: tạo CR hoặc cắt bớt tính năng ưu tiên thấp; thêm giờ nếu cho phép. Cập nhật baseline sau khi CR được duyệt.</p>
+    </div>
+  </div>
+
+  <div class="two-col" style="margin-top:12px;">
+    <div class="grid-box">
+      <h4>Cost Variance Threshold</h4>
+      <ul>
+        <li>0–5% sai lệch nỗ lực: chấp nhận.</li>
+        <li>6–10%: điều tra và khắc phục.</li>
+        <li>&gt; 10%: hành động khẩn và/hoặc tái baseline.</li>
+      </ul>
+    </div>
+    <div class="grid-box">
+      <h4>Cost Baseline Management</h4>
+      <p>Theo dõi Earned Value đơn giản: PV/EV/AC theo giờ; báo cáo CV, CPI hàng tuần; hành động theo ngưỡng và tái baseline khi thay đổi được duyệt.</p>
+    </div>
+  </div>
+
+  <div class="section-title">BASELINES</div>
+  <ul>
+    <li>Scope Baseline: yêu cầu, WBS, ma trận truy vết.</li>
+    <li>Schedule Baseline: Gantt (W1–W8) với các mốc (M1–M4).</li>
+    <li>Cost Baseline: ước lượng giờ theo WBS, dự phòng 10%.</li>
+    <li>Quality Baseline: tiêu chí chấp nhận và chỉ số chất lượng.</li>
+  </ul>
+
+  <div class="footer">
+    <div>stakeholdermap.com</div>
+    <div>Insert page number in Word after opening</div>
+  </div>
+</body>
+</html>
