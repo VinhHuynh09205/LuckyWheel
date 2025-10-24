@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>PROJECT MANAGEMENT PLAN - 082205001231-HuynhNgocQuangVinh</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+  @page { size: A4; margin: 2.5cm 2cm; }
+  body { font-family: Calibri, Arial, sans-serif; color: #000; font-size: 11pt; }
+  .header-banner { background:#1F4E79; color:#fff; text-transform: uppercase; text-align:center; padding:6px 10px; font-weight:bold; letter-spacing:.5px; }
+  .section-title { background:#1F4E79; color:#fff; text-transform: uppercase; padding:6px 10px; font-weight:bold; margin:18px 0 8px; }
+  .hint { font-style: italic; color:#000; }
+  table { width:100%; border-collapse: collapse; margin:6px 0 14px; }
+  th, td { border:1px solid #666; padding:6px 8px; vertical-align: top; }
+  th { background:#eeeeee; font-weight:bold; }
+  .two-col { display:grid; grid-template-columns: 1fr 1fr; gap:12px; }
+  .grid-box { border:1px solid #666; padding:8px; }
+  .grid-box h4 { margin:0 0 6px; font-size: 11pt; }
+  .footer { display:flex; justify-content:space-between; align-items:center; font-size:10pt; color:#2E74B5; margin-top:8px; }
+  .page-break { page-break-before: always; }
+  ul { margin:6px 0 6px 20px; }
+  .meta p { margin:2px 0; }
+</style>
+</head>
+<body>
+  <div class="header-banner">PROJECT MANAGEMENT PLAN</div>
+
+  <div class="meta">
+    <p><strong>Project:</strong> Personal Expense Management App (Android)</p>
+    <p><strong>Author:</strong> 082205001231 - Huynh Ngoc Quang Vinh</p>
+    <p><strong>Duration:</strong> 8 weeks (W1–W8)</p>
+    <p><strong>Scope (MVP):</strong> Track expenses/income, weekly/monthly budgets with alerts, bill reminders, charts/reports.</p>
+  </div>
+
+  <div class="section-title">TEMPLATE GUIDE</div>
+  <p class="hint">This is a guide to the common sections included in a Project Management Plan. Sections may be added, removed or amended to suit your project. Example tables have been added (where relevant) these are just a suggestion, you may decide to format these sections differently. Text in Blue italics is designed to assist you in completing the template. Delete this text before sharing the final document.</p>
+
+  <div class="page-break"></div>
+
+  <div class="header-banner">PROJECT MANAGEMENT PLAN</div>
+  <div class="section-title">PROJECT LIFE CYCLE</div>
+  <p class="hint">Describe the project life cycle. It should include phases for a controlled start, the work itself, quality assurance and project close.</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Phase</th>
+        <th>Key Activities</th>
+        <th>Key Deliverables</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Initiation (W1)</td>
+        <td>Define objectives and MVP scope; identify stakeholders and initial risks; set up Git repo and branching policy.</td>
+        <td>Lightweight Project Charter; high-level requirements list; initialized repository.</td>
+      </tr>
+      <tr>
+        <td>Planning (W1–W2)</td>
+        <td>Detailed requirements; WBS; Gantt/schedule; estimation; quality, comms and risk plans; UX mockups; DB/architecture.</td>
+        <td>Scope, Schedule and Cost baselines; mockups; architecture and DB schema.</td>
+      </tr>
+      <tr>
+        <td>Design &amp; Build (W3–W6, iterative)</td>
+        <td>Room/Repository; Transactions/Categories; Budgets &amp; alerts; Reports &amp; CSV export.</td>
+        <td>Working features FR1–FR9; updated architecture docs; Notification POC.</td>
+      </tr>
+      <tr>
+        <td>QA &amp; UAT (W7)</td>
+        <td>Unit/UI tests; acceptance scenarios; bug fixing; user guide.</td>
+        <td>Test report; acceptance checklist; user guide.</td>
+      </tr>
+      <tr>
+        <td>Deploy &amp; Close (W8)</td>
+        <td>Release build and signing; demo; lessons learned; archive artifacts.</td>
+        <td>APK 1.0; final report; handover package.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Phase</th>
+        <th>Reviews</th>
+        <th>Entry Criteria</th>
+        <th>Exit Criteria</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Initiation</td>
+        <td>Kickoff Review</td>
+        <td>Topic assigned; course requirements clarified</td>
+        <td>Charter approved; preliminary MVP scope</td>
+      </tr>
+      <tr>
+        <td>Planning</td>
+        <td>Plan Review</td>
+        <td>Approved charter; initial requirement list</td>
+        <td>Baselines (Scope/Schedule/Cost) approved; WBS + Gantt</td>
+      </tr>
+      <tr>
+        <td>Design &amp; Build</td>
+        <td>Sprint Reviews (end of W4 and W6)</td>
+        <td>Baselined plan; dev environment ready</td>
+        <td>MVP features complete; preliminary QA passed</td>
+      </tr>
+      <tr>
+        <td>QA &amp; UAT</td>
+        <td>Test Readiness; UAT Sign-off</td>
+        <td>Feature freeze; test data available</td>
+        <td>Acceptance criteria met; UAT approved</td>
+      </tr>
+      <tr>
+        <td>Deploy &amp; Close</td>
+        <td>Release/Closeout Review</td>
+        <td>APK passed UAT; documentation ready</td>
+        <td>Handover complete; project closed</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="section-title">DEVELOPMENT APPROACHES</div>
+  <p class="hint">Describe the development approach used to create each deliverable.</p>
+  <table>
+    <thead>
+      <tr>
+        <th>Deliverable</th>
+        <th>Development Approach</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Android App (MVP)</td>
+        <td>Agile iterative (2 sprints × 2 weeks + 1 week hardening); MVVM + Jetpack; small PRs with code review.</td>
+      </tr>
+      <tr>
+        <td>Data Layer (Room/SQLite)</td>
+        <td>Schema design → DAO/Repository → Migration; unit tests (in-memory).</td>
+      </tr>
+      <tr>
+        <td>Transactions &amp; Categories</td>
+        <td>Use-case driven dev; TDD at domain level where feasible.</td>
+      </tr>
+      <tr>
+        <td>Budgets &amp; Alerts</td>
+        <td>Weekly/Monthly logic + Notification/AlarmManager; forecast logic tests.</td>
+      </tr>
+      <tr>
+        <td>Reports &amp; Charts</td>
+        <td>Aggregate queries + MPAndroidChart/Compose Charts; performance tuning.</td>
+      </tr>
+      <tr>
+        <td>CSV Export/Import</td>
+        <td>Utility module; file I/O tests; data integrity checks.</td>
+      </tr>
+      <tr>
+        <td>Testing (Unit/UI)</td>
+        <td>JUnit/Mockito/Espresso; acceptance criteria aligned with NFRs.</td>
+      </tr>
+      <tr>
+        <td>Docs &amp; User Guide</td>
+        <td>Markdown source → PDF export; annotated screenshots of main flows.</td>
+      </tr>
+      <tr>
+        <td>Release APK</td>
+        <td>Release build, app signing (local keystore), release checklist.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="section-title">SUBSIDIARY MANAGEMENT PLANS</div>
+  <p class="hint">Note the supplementary management plans for the project.</p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Comment</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Scope</td><td>Scope Management Plan – MVP control and change process</td></tr>
+      <tr><td>Time</td><td>Schedule Management Plan – W1–W8 Gantt and progress rules</td></tr>
+      <tr><td>Cost</td><td>Cost/Effort Plan – hour estimates and WBS allocation</td></tr>
+      <tr><td>Quality</td><td>Quality Plan – acceptance criteria, coding standard, code review</td></tr>
+      <tr><td>Resources</td><td>Resource Plan – devices, environments, roles</td></tr>
+      <tr><td>Communications</td><td>Communications Plan – channels and weekly cadence</td></tr>
+      <tr><td>Risk</td><td>Risk Register – identification, assessment, responses</td></tr>
+      <tr><td>Procurement</td><td>Procurement Plan – OSS libraries, licenses, keystore</td></tr>
+      <tr><td>Stakeholder</td><td>Stakeholder Plan – mapping and engagement strategies</td></tr>
+      <tr><td>Other Plans</td><td>Configuration & Change Control; Security & Privacy; Data & Backup</td></tr>
+    </tbody>
+  </table>
+
+  <div class="page-break"></div>
+
+  <div class="header-banner">PROJECT MANAGEMENT PLAN</div>
+  <div class="section-title">VARIANCE THRESHOLDS</div>
+  <p class="hint">Document allowable variances and how baselines will be managed.</p>
+
+  <div class="two-col">
+    <div class="grid-box">
+      <h4>Scope Variance Threshold</h4>
+      <ul>
+        <li>Minor UI tweaks and sub-features that do not change main user flows.</li>
+        <li>Performance: adding a transaction in &lt; 100 ms on mid-range device.</li>
+        <li>Rendering smoothness: target ≥ 60 FPS for main screens.</li>
+      </ul>
+    </div>
+    <div class="grid-box">
+      <h4>Scope Baseline Management</h4>
+      <p>Controlled via Scope Baseline (approved requirements and WBS). Minor changes logged to backlog without CR. Medium/major changes require Change Request with impact analysis (Schedule/Cost/Quality) and approval before implementation. Update the requirements traceability matrix post-approval.</p>
+    </div>
+    <div class="grid-box">
+      <h4>Schedule Variance Threshold</h4>
+      <ul>
+        <li>Acceptable: ≤ 10% task slip, no critical path impact, ≤ 50% float used.</li>
+        <li>Warning: 10–20% slip or &gt; 50% float used.</li>
+        <li>Unacceptable: &gt; 20% slip or critical path delay &gt; 3 days/1 week.</li>
+      </ul>
+    </div>
+    <div class="grid-box">
+      <h4>Schedule Baseline Management</h4>
+      <p>Weekly tracking (burndown, % complete). On warning: re-prioritize, trim minor tech debt. If unacceptable: raise CR or de-scope low-priority features; add overtime if permitted. Update baseline upon CR approval.</p>
+    </div>
+  </div>
+
+  <div class="two-col" style="margin-top:12px;">
+    <div class="grid-box">
+      <h4>Cost Variance Threshold</h4>
+      <ul>
+        <li>0–5% effort variance acceptable.</li>
+        <li>6–10% triggers investigation and corrective actions.</li>
+        <li>&gt; 10% triggers urgent corrective action and possible re-baselining.</li>
+      </ul>
+    </div>
+    <div class="grid-box">
+      <h4>Cost Baseline Management</h4>
+      <p>Simple EVM tracking: PV/EV/AC in hours; report CV and CPI weekly; take actions per thresholds and re-baseline upon approved changes.</p>
+    </div>
+  </div>
+
+  <div class="section-title">BASELINES</div>
+  <ul>
+    <li>Scope Baseline: requirements, WBS, traceability matrix</li>
+    <li>Schedule Baseline: Gantt (W1–W8) with milestones (M1–M4)</li>
+    <li>Cost Baseline: effort estimates by WBS, 10% contingency</li>
+    <li>Quality Baseline: acceptance criteria and key quality metrics</li>
+  </ul>
+
+  <div class="footer">
+    <div>stakeholdermap.com</div>
+    <div>Page 1-4 (set real page numbers after opening in Word)</div>
+  </div>
+</body>
+</html>
